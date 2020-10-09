@@ -1,4 +1,7 @@
 
+
+
+---------------------------CATEGORY----------------------------
 Find by Id:
 ec2-13-229-108-245.ap-southeast-1.compute.amazonaws.com:8080/api/category/find?categoryId=5f7f47e7b81e7f2e21a031de
 
@@ -13,5 +16,55 @@ Get Cat by name
 ec2-13-229-108-245.ap-southeast-1.compute.amazonaws.com:8080/api/category
 Create new category
 ADMIN TOKEN : eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBZG1pbiIsInJvbGVzIjpbeyJhdXRob3JpdHkiOiJBRE1JTiJ9XSwicGhvbmUiOiIxMzEyMzEyNDEyIiwibmFtZSI6IkFkbWluIiwiZW1haWwiOiJOZWVkbGVzdGlja0BnbWFpbC5jb20iLCJpZCI6IjVmNzhjYWYyYjc2MTY3MDk1ZTZlYmYxMSJ9.ZxHjCmriQa-FCSoLuFoVgyfHSHKXJuAYFVYkbIrWGTQ
+
+
+---------------------------USER----------------------------
+---SIGN UP
+ec2-13-229-108-245.ap-southeast-1.compute.amazonaws.com:8080/api/auth/register
+{
+  "email": "diff_9@gmail.com",
+  "name": "Notnot",
+  "phone": "13124123",
+  "password": "user@123",
+  "address": "211 Thach Lam, Phu Thanh , Tan Phu"
+}
+//email and phone must be unique
+
+
+--SIGN IN
+<Insert the newly-created token here >
+ec2-13-229-108-245.ap-southeast-1.compute.amazonaws.com:8080/api/auth/login
+{
+  "requiredEntry": "diff_9@gmail.com",
+  "password": "ser@123"
+}
+//login by email or phone
+
+
+--EDIT INFOec2-13-229-108-245.ap-southeast-1.compute.amazonaws.com:8080/api/self/edit
+Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBZG1pbl9va2ZlZmFmZXdmdyIsInJvbGVzIjpbeyJhdXRob3JpdHkiOiJVU0VSIn1dLCJwaG9uZSI6IjMxMzEyMzIxMzIxMyIsImVtYWlsIjoiZGZhZXdmIiwiaWQiOnsidGltZXN0YW1wIjoxNjAxNTIyNjY4LCJjb3VudGVyIjoxMDgwMDEwMiwidGltZSI6MTYwMTUyMjY2ODAwMCwiZGF0ZSI6MTYwMTUyMjY2ODAwMCwidGltZVNlY29uZCI6MTYwMTUyMjY2OCwibWFjaGluZUlkZW50aWZpZXIiOjExNTkxNDM3LCJwcm9jZXNzSWRlbnRpZmllciI6MTQ2Nzd9fQ.vhkkb9Tz37v8PCldPKHR3VtvVB27hnWsFnSfRsqzjv4
+{
+  "email": "user@gmail.com",
+  "name": "User",
+  "phone": "0123456789",
+  "address": "211 Thach Lam, Phu Thanh , Tan Phu"
+}
+
+--EDIT PASSWORD
+ec2-13-229-108-245.ap-southeast-1.compute.amazonaws.com:8080/api/password
+{
+  "password": "user@123",
+  "newPassword": "user@1234"
+}
+
+--VIEW INFO
+ec2-13-229-108-245.ap-southeast-1.compute.amazonaws.com:8080/api/self
+Insert bearer token
+
+
+--VIEW A LIST OF USERS 
+ec2-13-229-108-245.ap-southeast-1.compute.amazonaws.com:8080/api/users/?page=1&rows=2
+ADMIN TOKEN = eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIwOTA5MDkwOTA5MCIsInJvbGVzIjpbeyJhdXRob3JpdHkiOiJBRE1JTiJ9XSwicGhvbmUiOiIwOTA5MDkwOTA5MCIsImVtYWlsIjoidGVzdGZAZ21haWwuY29tIiwiaWQiOiI1Zjc1NzFlMTU5NjZmNjUyZjA0ZmQ5MjAifQ.vXF21zAdNBNZOXzubgNnOnC0jcaKhH7X1ZLLQ6_v3zo
+
 
 

@@ -1,0 +1,17 @@
+
+Find by Id:
+ec2-13-229-108-245.ap-southeast-1.compute.amazonaws.com:8080/api/category/find?categoryId=5f7f47e7b81e7f2e21a031de
+
+5f7f47e7b81e7f2e21a031de ( search for pizza )
+
+ec2-13-229-108-245.ap-southeast-1.compute.amazonaws.com:8080/api/category
+Get a list of Categories
+
+ec2-13-229-108-245.ap-southeast-1.compute.amazonaws.com:8080/api/category/search?categoryName=pizza
+Get Cat by name
+
+ec2-13-229-108-245.ap-southeast-1.compute.amazonaws.com:8080/api/category
+Create new category
+ADMIN TOKEN : eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBZG1pbiIsInJvbGVzIjpbeyJhdXRob3JpdHkiOiJBRE1JTiJ9XSwicGhvbmUiOiIxMzEyMzEyNDEyIiwibmFtZSI6IkFkbWluIiwiZW1haWwiOiJOZWVkbGVzdGlja0BnbWFpbC5jb20iLCJpZCI6IjVmNzhjYWYyYjc2MTY3MDk1ZTZlYmYxMSJ9.ZxHjCmriQa-FCSoLuFoVgyfHSHKXJuAYFVYkbIrWGTQ
+
+
